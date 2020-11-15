@@ -1,38 +1,67 @@
 .App {
-  text-align: center;
+  box-sizing: border-box;
+  width: 900px;
+  margin: 0 auto;
+  background-color: grey;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.filedrop-header {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.filedrop-status {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bolded-text {
+  font-weight: bold;
+}
+
+.filedrop-drop-header {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.filedrop-footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.filedrop-droparea {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.filedrop-filelist {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.fileitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 5px 0 5px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fileitem-item {
+  width: 25%;
+  margin: auto;
 }
